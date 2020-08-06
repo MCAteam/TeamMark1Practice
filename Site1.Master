@@ -31,15 +31,16 @@
         <%--This is header part of master page.--%>
         <div>
             <nav class="navbar navbar-expand-lg navbar-light">
-                <img src="img/Handicraft.jpg" width="100" height="100" />
+                <img src="img/Krishna.jpg" width="100" height="100" />
             
             
             <%--Bootstrap Library for customization--%>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
             </button>
-
-            
+         
+            <div class="container-sm-12">
+          
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                       <li class="nav-item active">
@@ -74,13 +75,14 @@
                         </li>
                     </ul>
               </div>
+            </div>
             </nav>
         </div>
 
         <!--Main content placeholder Start -->
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
+             
             </asp:ContentPlaceHolder>
         </div>
         <!--Main content placeholder End -->

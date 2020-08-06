@@ -71,6 +71,7 @@
     <Content Include="adminlogin.aspx" />
     <Content Include="AdminUserManagement.aspx" />
     <Content Include="css\customCSS.css" />
+    <Content Include="css\HomePage.css" />
     <Content Include="Homepage.aspx" />
     <Content Include="terms.aspx" />
     <Content Include="userlogin.aspx" />
