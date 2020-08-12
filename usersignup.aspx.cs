@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Linq.Expressions;
@@ -12,6 +13,8 @@ namespace TeamMark1
 {
     public partial class usersignup : System.Web.UI.Page
     {
+        //We made string strcon to take connection string provided in web.config file. We access the connection string with name "con"
+        string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -19,14 +22,24 @@ namespace TeamMark1
 
         protected void Button_Click(object sender, EventArgs e)
         {
-            //We made string strcon to take connection string provided in web.config file. We access the connection string with name "con"
-            string strcon = ConfigurationManager.ConnectionStrings["con"].ConnectionString;
+            if(checkcustomerexist())
+            {
+                Response.Write("<script>('Customer already exist')</script>");
+            }
+            else
+            {
+                signup();
+            }
+        }
+
+        void signup()
+        {
             try
             {
                 //to stablish sql connection we write below line.
                 SqlConnection conn = new SqlConnection(strcon);
                 //if the connection conn is closed it will get opened.
-                if(conn.State==System.Data.ConnectionState.Closed)
+                if (conn.State == System.Data.ConnectionState.Closed)
                 {
                     conn.Open();
                 }
@@ -44,10 +57,47 @@ namespace TeamMark1
                 conn.Close();
                 Response.Write("<script>alert('You are Signed up successfully')</script>");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 //error will be shown here
                 Response.Write("<script>alert'" + ex.Message + "'</script>");
+            }
+        }
+
+        bool checkcustomerexist()
+        {
+            try
+            {
+                //to stablish sql connection we write below line.
+                SqlConnection conn = new SqlConnection(strcon);
+                //if the connection conn is closed it will get opened.
+                if (conn.State == System.Data.ConnectionState.Closed)
+                {
+                    conn.Open();
+                }
+
+                SqlCommand cmd = new SqlCommand("SELECT * FROM usersignup_tbl WHERE userid='"+textbox8.Text.Trim()+"';", conn);
+                //SqlDataAdapter is used to get data from "cmd"
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                // datatable is a database table which has all the data in dt object
+                DataTable dt = new DataTable();
+                //if userid entered by user (da) == userid in database table (dt), means userid is already present in table.
+                //dt.rows.count will count the the matched userid. 
+                da.Fill(dt);
+                if(dt.Rows.Count>=1)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                //error will be shown here
+                Response.Write("<script>alert'" + ex.Message + "'</script>");
+                return false;
             }
         }
     }
