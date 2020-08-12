@@ -33,5 +33,10 @@ namespace TeamMark1
         {
             Response.Redirect("usersignup.aspx");
         }
+
+        protected void LinkButton5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ProductManagement.aspx");
+        }
     }
 }

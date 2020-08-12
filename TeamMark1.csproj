@@ -68,11 +68,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aboutus.aspx" />
+    <Content Include="AddProduct.aspx" />
     <Content Include="adminlogin.aspx" />
     <Content Include="AdminUserManagement.aspx" />
     <Content Include="css\customCSS.css" />
     <Content Include="css\HomePage.css" />
     <Content Include="Homepage.aspx" />
+    <Content Include="ProductManagement.aspx" />
+    <Content Include="RemoveProduct.aspx" />
     <Content Include="terms.aspx" />
     <Content Include="userlogin.aspx" />
     <Content Include="usersignup.aspx" />
@@ -86,6 +89,13 @@
     </Compile>
     <Compile Include="aboutus.aspx.designer.cs">
       <DependentUpon>aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
     </Compile>
     <Compile Include="adminlogin.aspx.cs">
       <DependentUpon>adminlogin.aspx</DependentUpon>
@@ -108,7 +118,21 @@
     <Compile Include="Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ProductManagement.aspx.cs">
+      <DependentUpon>ProductManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductManagement.aspx.designer.cs">
+      <DependentUpon>ProductManagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveProduct.aspx.cs">
+      <DependentUpon>RemoveProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RemoveProduct.aspx.designer.cs">
+      <DependentUpon>RemoveProduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

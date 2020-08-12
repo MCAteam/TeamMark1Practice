@@ -11,7 +11,7 @@ namespace TeamMark1
 {
 
 
-    public partial class usersignup
+    public partial class AddProduct
     {
 
         /// <summary>
@@ -51,30 +51,12 @@ namespace TeamMark1
         protected global::System.Web.UI.WebControls.TextBox textbox4;
 
         /// <summary>
-        /// textbox8 control.
+        /// gridview1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textbox8;
-
-        /// <summary>
-        /// textbox9 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textbox9;
-
-        /// <summary>
-        /// Button control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button;
+        protected global::System.Web.UI.WebControls.GridView gridview1;
     }
 }

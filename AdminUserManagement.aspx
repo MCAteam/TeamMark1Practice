@@ -10,7 +10,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
-                                <center><h4>Member Details</h4></center>
+                                <center><h4>Customer Details</h4></center>
                             </div>
                         </div>
                         <div class="row">
@@ -21,7 +21,7 @@
 
                         <div class="row">
                             <div class="col-md-4">
-                                <label>Member ID</label>
+                                <label>User ID</label>
                                 <div class="form-group">
                                 <div class="input-group">
                                 <asp:TextBox class="form-control" ID="textbox1" runat="server" />
@@ -76,36 +76,6 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-md-4">
-                                <label>State</label>
-                                <div class="form-group">
-                                <asp:TextBox class="form-control" ID="textbox7" runat="server" ReadOnly="true" />
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <label>City</label>
-                                <div class="form-group">
-                                <asp:TextBox class="form-control" ID="textbox8" runat="server" ReadOnly="true" />
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <label>Pincode</label>
-                                <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="textbox9" runat="server" TextMode="Number" ReadOnly="true" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <label>Full Postal Address</label>
-                                <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="textbox10" runat="server" Rows="2" ReadOnly="true" TextMode="MultiLine" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
                             <div class="col">
                                 <asp:Button CssClass="btn btn-danger btn-lg btn-block" ID="button4" runat="server" Text="Delete User Permanently" /> 
                             </div>
@@ -119,7 +89,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
-                                <center><h4>Member List</h4></center>
+                                <center><h4>Customer List</h4></center>
                             </div>
                         </div>
 

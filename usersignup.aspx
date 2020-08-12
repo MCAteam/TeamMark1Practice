@@ -56,49 +56,11 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        <br />
 
                         <div class="row">
-                            <div class="col-md-4">
-                                <label>State</label><br />
-                                <div class="form-group">
-                                <asp:DropDownList CssClass="form-control" ID="DropDownList1" runat="server">
-                                    <asp:ListItem text="Andhra Pradesh" Value="Andhra Pradesh" />
-                                    <asp:ListItem text="Arunachal Pradesh" Value="Arunachal Pradesh" />
-                                    <asp:ListItem text="Jammu and Kashmir" Value="Jammu and Kashmir" />
-                                    <asp:ListItem text="Himachal Pradesh" Value="Himachal Pradesh" />
-                                    <asp:ListItem text="Punjab" Value="Punjab" />
-                                    <asp:ListItem text="Uttarakhand" Value="Uttarakhand" />
-                                    <asp:ListItem text="Haryana" Value="Haryana" />
-                                    <asp:ListItem text="Rajasthan" Value="Rajasthan" />
-                                </asp:DropDownList>   
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <label>City</label><br />
-                                <div class="form-group">
-                                <asp:TextBox CssClass="form-control" ID="textbox5" runat="server" placeholder="City"/>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <label>Pincode</label><br />
-                                <div class="form-group">
-                                <asp:TextBox CssClass="form-control" ID="textbox6" runat="server" placeholder="Pincode" />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <label>Address</label><br />
-                                <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="textbox7" runat="server" placeholder="Address" TextMode="MultiLine" Rows="2"/>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-                                
+                            <div class="col">  
                                 <center><span class="badge badge-pill badge-dark"> Login Credentials</span></center>
                             </div>
                         </div>
@@ -121,7 +83,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="form-group">
-                                    <asp:Button class="btn btn-success btn-block btn-lg" ID="Button" runat="server" text="Sign Up"/>
+                                    <asp:Button class="btn btn-success btn-block btn-lg" ID="Button" runat="server" text="Sign Up" OnClick="Button_Click"/>
                                 </div>
                             </div>
                         </div>
