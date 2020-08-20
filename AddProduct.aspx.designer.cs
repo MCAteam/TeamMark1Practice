@@ -15,6 +15,15 @@ namespace TeamMark1
     {
 
         /// <summary>
+        /// textbox5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox textbox5;
+
+        /// <summary>
         /// textbox1 control.
         /// </summary>
         /// <remarks>
@@ -22,6 +31,15 @@ namespace TeamMark1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox textbox1;
+
+        /// <summary>
+        /// dropdownlist1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dropdownlist1;
 
         /// <summary>
         /// textbox2 control.
@@ -33,22 +51,31 @@ namespace TeamMark1
         protected global::System.Web.UI.WebControls.TextBox textbox2;
 
         /// <summary>
-        /// textbox3 control.
+        /// textbox7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textbox3;
+        protected global::System.Web.UI.WebControls.TextBox textbox7;
 
         /// <summary>
-        /// textbox4 control.
+        /// textbox11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox textbox4;
+        protected global::System.Web.UI.WebControls.TextBox textbox11;
+
+        /// <summary>
+        /// button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button button1;
 
         /// <summary>
         /// gridview1 control.
