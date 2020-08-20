@@ -30,7 +30,7 @@
 
                         <div class="row">
                             <div class="col">
-                                <label>Member ID</label>
+                                <label>User ID</label>
                                 <div class="form-group">
                                     <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" Placeholder="Member ID"></asp:TextBox>
                                 </div>
@@ -39,7 +39,7 @@
                                     <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" Placeholder="Member Password" TextMode="Password"></asp:TextBox>
                                 </div>
                                 <div class="form-group">
-                                    <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" text="Login" />
+                                    <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" text="Login" OnClick="Button1_Click" />
                                 </div>
                                 <div class="form-group">
                                     <a href="usersignup.aspx">
